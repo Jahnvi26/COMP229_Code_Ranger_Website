@@ -1,0 +1,42 @@
+<!-- File name: add.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 25/02/2021
+ExpressPortfolio - with DB
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+<!--HEADER SECTION-->
+<%- include ../Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include ../Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+<div class="text-center">
+    <h3 style="margin-top: 10px;font-weight: bold;">Enter the Details of the Business Contacts</h3>
+    <form method="POST">
+        <input type="text" id="nameTextField" name="name" placeholder="Enter Contact Name" required>
+        <br>
+        <input type="tel" id="contactNumberTextField" name="contact_no" placeholder="Enter Contact Number" pattern="[(7|8|9)\d{9}" required>
+        <br>
+        <input type="text" id="emailTextField" name="email" placeholder="Enter Contact Email Address" required>
+        <br>
+
+        <div class="info-link-black">          
+           <button type="submit">Add Contact</button>
+        </div>  
+
+        <br>
+        <div class="info-link-black">          
+            <a href="/business-list">Cancel</a>
+         </div> 
+    </form>
+</div>
+
+
+<!--FOOTER SECTION-->
+<%- include ../Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include ../Partials/script.ejs%>

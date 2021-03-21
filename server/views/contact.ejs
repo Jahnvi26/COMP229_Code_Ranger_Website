@@ -1,0 +1,54 @@
+<!-- File name: contact.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 15/02/2021
+ExpressPortfolio
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+
+<%- include Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+<div class="text-center">
+    <div class="contact-section-1">
+        <form action="/">
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+        <br>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email ID">
+        <br>
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:150px"></textarea>
+        <br>
+            
+            <div class="info-link-black">          
+                <a href="/" role="button" type="submit">Send Message</a>
+              </div>  
+          </form>
+    </div>
+    <div class="contact-section-2">
+        <h2>Spandan Patel</h2>
+        <br>
+        <h5>- - - - Gameplay/ Game Programmer - - - -</h5>
+        <br><br>
+        <h3>Contact Me</h3>
+        <br>
+        <div class="social-link"><a href="mailto:spandan12patel10@gmail.com">
+            GMAIL
+          </a></div><br><br>
+          <div class="social-link"><a href="https://github.com/Th3M3sS1" target="_blank">
+            GITHUB
+          </a></div><br><br>
+          <div class="social-link"><a href="https://twitter.com/roadtogamedev" target="_blank">
+            TWITTER
+            </a></div>
+    </div>
+</div>
+
+<!--FOOTER SECTION-->
+    <%- include Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include Partials/script.ejs%>

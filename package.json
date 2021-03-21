@@ -1,0 +1,71 @@
+{
+  "name": "spandan_express_portfolio",
+  "version": "1.0.0",
+  "description": "website for COMP229",
+  "main": "server.js",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.6.0",
+    "bytes": "^3.0.0",
+    "connect-flash": "^0.1.1",
+    "content-disposition": "^0.5.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "express-session": "^1.17.1",
+    "finalhandler": "^1.1.1",
+    "http-errors": "^1.6.3",
+    "iconv-lite": "^0.4.23",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mime": "^1.4.1",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
+    "morgan": "^1.9.1",
+    "on-headers": "^1.0.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "popper.js": "^1.16.1",
+    "qs": "^6.5.2",
+    "raw-body": "^2.3.3",
+    "send": "^0.16.2",
+    "serve-static": "^1.13.2",
+    "setprototypeof": "^1.1.0",
+    "statuses": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th3M3sS1/Spandan_Express_Portfolio.git"
+  },
+  "author": "Spandan Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Th3M3sS1/Spandan_Express_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Th3M3sS1/Spandan_Express_Portfolio#readme",
+  "devDependencies": {
+    "@types/connect-flash": "^0.0.36",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/express-session": "^1.17.3",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.10.3",
+    "@types/passport": "^1.0.6",
+    "@types/passport-jwt": "^3.0.5",
+    "@types/passport-local": "^1.0.33",
+    "@types/passport-local-mongoose": "^4.0.13"
+  }
+}

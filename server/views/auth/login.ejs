@@ -1,0 +1,50 @@
+<!-- File name: login.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 28/02/2021
+ExpressPortfolio - with DB
+Copyright © 2021 Centennial College. All rights reserved. -->
+
+<!--HEADER SECTION-->
+<%- include ../Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include ../Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+    <div class="text-center">
+
+        <!-- Message Section-->
+        <% if(messages.length > 0) {%>
+            <%=messages %> 
+        <% } %>
+
+        <h3 style="margin-top: 10px;font-weight: bold;">Log In</h3>
+
+        <form method="POST" autocomplete="off">
+            <input type="text" id="usernameTextField" name="username" placeholder="Enter Your Username" required autofocus>
+            <br>
+            <input type="text" id="passwordTextField" name="password" placeholder="Enter Your Password" required>
+            <br>
+            or
+            <a href="/register">Register Here</a>
+            <br><br>
+    
+            <div class="info-link-black">          
+               <button type="submit">Log In</button>
+            </div>  
+    
+            <br>
+            <div class="info-link-black">          
+                <a href="/">Cancel</a>
+             </div> 
+        </form>
+
+    </div>
+
+<!--FOOTER SECTION-->
+<%- include ../Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include ../Partials/script.ejs%>

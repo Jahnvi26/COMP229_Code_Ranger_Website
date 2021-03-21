@@ -1,0 +1,26 @@
+<!-- File name: mainnav.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 15/02/2021
+ExpressPortfolio
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+<div class="topnav">
+  <a type="brand-name" href="/">Spandan Patel <img class="logo-nav" src="/Assets/images/logo.png"></a>
+  <div class="topnav-flrght">
+  <a href="/">Home</a>
+  <a href="/info">About Me</a>
+  <a href="/projects">Projects</a>
+  <a href="/services">Services</a>
+  <a href="/contact">Contact Me</a>
+
+  <% if(typeof displayName == 'string' && displayName) { %>
+  <a href="/business-list">Business Contacts</a>
+  <a href="/logout"}>Logout</a>
+  <% } else { %>
+    <a href="/login"}>Login</a>
+  <% } %>
+
+  </div>
+  </a>
+</div>

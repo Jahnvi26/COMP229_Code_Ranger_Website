@@ -1,0 +1,71 @@
+<!-- File name: projects.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 15/02/2021
+ExpressPortfolio
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+<%- include Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+    <div class="text-center">
+        <div class="header-of-page"><h3 style="font-weight: bold;">My Demo Reel</h3></div>
+            <div class="project-11">
+                <h2 style="text-align: center;">Dota 2 Clone</h2><br>
+                <ul style="text-align: justify;">
+                    <li><h6>In this project, I recreated mechanics of Abilites system of Heros, Buffs and Debuffs and CoolDown system of Dota 2 Game.</h6></li>
+                    <li><h6>I have created proper architecture for Heroes and thier skills, skills' cooldown, dynamic UI for skills.</h6></li>
+                    <li><h6>I have also added buffs and debuffs to abilities, so they can have different effects on enemies.</h6></li>
+                    <li><h6>And to show my working architecture, I have created 2 Heroes from Game and their abilities. And some extra abilities as well.</h6></li>        
+                </ul>
+            </div>
+          
+            <div class="project-21">
+                <video class="project-video" controls>
+                    <source src="/Assets/videos/dota2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="project-11">
+                <h2 style="text-align: center;">Clash of Clans/ Clash Royale Clone</h2><br>
+                <ul style="text-align: justify;">
+                    <li><h6>In this project, I recreated mechanics of TROOPS, SPELLS and DEFENCES of COC/CR games.</h6></li>
+                    <li><h6>I have also created proper architecture for Troops, Spells and Defence buildings in this project.</h6></li>
+                    <li><h6>Some troops have specified targets, some attacks all builings. Same goes for buildings, some can only attack ground troops, some can only attack air troops, and other can attack both type of troops.</h6></li>        
+                    <li><h6>To illustrate power of my base architecture, I have made few Troops, Defence Buildings and Spells. </h6></li>
+                </ul>
+            </div>
+          
+            <div class="project-21">
+                <video class="project-video" controls>
+                    <source src="/Assets/videos/coccr.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="project-11">
+                <h2 style="text-align: center;">Braid Clone</h2><br>
+                <ul style="text-align: justify;">
+                    <li><h6>In this project, I recreated mechanics of indie game called BRAID.</h6></li>
+                    <li><h6>There are 2 modes in this project, one same as the game and other I created just for fun.</h6></li>
+                    <li><h6>Basically, I have created main mechanic of game which is to reverse time. So, player can go go back to previous positions untill he unclick button.</h6></li>        
+                    <li><h6>Other mechanic is that, player can only travel back in time of last desinger defined fixed time, but travel back speed is fast./h6></li>
+                </ul>
+            </div>
+          
+            <div class="project-21">
+                <video class="project-video" controls>
+                    <source src="/Assets/videos/braid.mp4" type="video/mp4">
+                </video>
+            </div>
+        
+    </div>
+
+<!--FOOTER SECTION-->
+    <%- include Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include Partials/script.ejs%>

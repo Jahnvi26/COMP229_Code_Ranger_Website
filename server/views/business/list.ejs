@@ -1,0 +1,66 @@
+<!-- File name: list.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 24/02/2021
+ExpressPortfolio - with DB
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+<!--HEADER SECTION-->
+<%- include ../Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include ../Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+    <div class="text-center">
+
+      <!--Check if user is logged in or not. If yes, then show Business Contact List-->
+
+      <% if(typeof displayName == 'string' && displayName) { %>
+
+        <h3 style="margin-top: 10px;font-weight: bold;">Business Contact List</h3>
+        
+        <br>
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Contact Number</th>
+              <th>Email Address</th>
+              <% if(typeof displayName == 'string' && displayName) { %>
+              <th>Edit Data</th>
+              <th>Delete Data</th>
+              <% } %>
+            </tr>
+
+            <% for(let count = 0; count < BusinessList.length; count++) { %>
+                <tr>
+                    <td><%= BusinessList[count].name %></td>
+                    <td><%= BusinessList[count].contact_no %></td>
+                    <td><%= BusinessList[count].email %></td>
+                    <% if(typeof displayName == 'string' && displayName) { %>
+                    <td><div class="info-link-table-edit"><a href="/business-list/edit/<%= BusinessList[count]._id %>">Edit This Contact</a></div></td>
+                    <td><div class="info-link-table-delete"><a href="/business-list/delete/<%= BusinessList[count]._id %>">Delete This Contact</a></div></td>
+                    <% } %>
+                </tr>
+            <% } %>
+          </table>
+
+          <br>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
+          <div class="info-link-black">          
+            <a href="/business-list/add" role="button">Add Contact</a>
+          </div>  
+          <% } %>
+
+      <% } else { %>
+        <script> document.location.href = '/login' </script>
+        <% } %>
+    </div>
+
+<!--FOOTER SECTION-->
+    <%- include ../Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include ../Partials/script.ejs%>
