@@ -1,8 +1,8 @@
 /* File name: index.js
-Name: Spandan Patel
-Student Id: 301160189
-Date: 28/02/2021
-ExpressPortfolio - with DB
+Name: Code Ranger
+Student Id: 301160189, 301095154, 301145985
+Date: 22/03/2021
+E-Commerce Website
 Copyright © 2021 Centennial College. All rights reserved.*/
 
 let express = require('express');
@@ -23,20 +23,24 @@ module.exports.displayHomePage = (req, res, next) => {
     res.render('index', {title : 'Home', displayName : req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayServicePage = (req, res, next) => {
-    res.render('services', { title: 'Services', displayName : req.user ? req.user.displayName : ''});
+module.exports.displayElectronicPage = (req, res, next) => {
+    res.render('electronic', {title : 'Electornics Items', displayName : req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayProjectPage = (req, res, next) => {
-    res.render('projects', { title: 'Projects', displayName : req.user ? req.user.displayName : ''});
+module.exports.displayFashionPage = (req, res, next) => {
+    res.render('fashion', {title : 'Fashions Items', displayName : req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayContactPage = (req, res, next) => {
-    res.render('contact', { title: 'Contact', displayName : req.user ? req.user.displayName : ''});
+module.exports.displaySportPage = (req, res, next) => {
+    res.render('sport', {title : 'Sports Items', displayName : req.user ? req.user.displayName : ''});
 }
 
-module.exports.displayInfoPage = (req, res, next) => {
-    res.render('info', {title: 'Info', displayName : req.user ? req.user.displayName : ''});
+module.exports.displayToyPage = (req, res, next) => {
+    res.render('toy', {title : 'Toys Items', displayName : req.user ? req.user.displayName : ''});
+}
+
+module.exports.displayBookPage = (req, res, next) => {
+    res.render('book', {title : 'Books Items', displayName : req.user ? req.user.displayName : ''});
 }
 
 module.exports.displayLoginPage = (req, res, next) => {
@@ -97,7 +101,7 @@ module.exports.processLoginPage = (req, res, next) => {
                 email : user.email
             }, token : authToken});*/
 
-            return res.redirect('/business-list');
+            return res.redirect('/inventory-list');
         });
     })(req, res, next);
 }
@@ -153,7 +157,7 @@ module.exports.processRegisterPage = (req, res, next) => {
             res.json({success : 'User Registered Successfully!'});*/
 
             return passport.authenticate('local')(req, res, () => {
-                res.redirect('/business-list');
+                res.redirect('/inventory-list');
             })
         }
     });

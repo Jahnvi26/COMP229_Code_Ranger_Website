@@ -1,8 +1,8 @@
 /* File name: user.js
-Name: Spandan Patel
-Student Id: 301160189
-Date: 15/02/2021
-ExpressPortfolio
+Name: Code Ranger
+Student Id: 301160189, 301095154, 301145985
+Date: 22/03/2021
+E-Commerce Website
 Copyright © 2021 Centennial College. All rights reserved.*/
 
 

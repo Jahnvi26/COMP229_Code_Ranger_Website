@@ -13,18 +13,21 @@ let indexController = require('../controllers/index');
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
 
-/*get service page*/
+/*get electronic page*/
 /*didn't use "index" as "view" in render method, so don't have to create if else statement by cheking title name for showing contents in index.ejs*/
-router.get('/services', indexController.displayServicePage);
+router.get('/electonic', indexController.displayElectronicPage);
 
-/*get project page*/
-router.get('/projects', indexController.displayProjectPage);
+/*get fashion page*/
+router.get('/fashion', indexController.displayFashionPage);
 
-/*get contact page*/
-router.get('/contact', indexController.displayContactPage);
+/*get sport page*/
+router.get('/sport', indexController.displaySportPage);
 
-/*get about page*/
-router.get('/info', indexController.displayInfoPage);
+/*get toy page*/
+router.get('/toy', indexController.displayToyPage);
+
+/*get book page*/
+router.get('/book', indexController.displayBookPage);
 
 /*Get route for display the Login Page*/
 router.get('/login', indexController.displayLoginPage);

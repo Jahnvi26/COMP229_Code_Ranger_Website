@@ -1,8 +1,8 @@
 /* File name: user.js
-Name: Spandan Patel
-Student Id: 301160189
-Date: 28/02/2021
-ExpressPortfolio - with DB
+Name: Code Ranger
+Student Id: 301160189, 301095154, 301145985
+Date: 22/03/2021
+E-Commerce Website
 Copyright © 2021 Centennial College. All rights reserved.*/
 
 //require modules for the User model
@@ -32,6 +32,24 @@ let User = mongoose.Schema
             default: "",
             trim: true,
             required: "Display name is required"
+        },
+        money:
+        {
+            type: Number,
+            default: 0.0
+        },
+        wishlist:
+        {
+            //change later to multi dimensional array or array of obejects of inventory class
+            type: Array,
+            default: []
+
+        },
+        orderHistory:
+        {
+            //change later to multi dimensional array or array of obejects of inventory class
+            type: Array,
+            default: []
         },
         created:
         {
